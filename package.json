@@ -1,14 +1,21 @@
 {
-  "name": "vrcru-discord-bot",
-  "module": "app.js",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "discord.js": "^14.14.1"
-  }
+    "name": "discord-general-bot",
+    "private": true,
+    "type": "module",
+    "module": "discord-general-bot.ts",
+    "scripts": {
+        "start": "bun run discord-general-bot.ts",
+        "check": "bun check",
+        "test": "bun test"
+    },
+    "engines": {
+        "bun": ">=1.4.4"
+    },
+    "packageManager": "bun@1.4.4",
+    "dependencies": {
+        "discord.js": "^14.28.1"
+    },
+    "devDependencies": {
+        "@types/bun": "^1.4.4"
+    }
 }
